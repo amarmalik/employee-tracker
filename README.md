@@ -44,7 +44,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - The SearchBar component handles the search input and triggers the search functionality.
 - The EmployeeList component displays the list of employees in a table format.
 - The search functionality filters employees based on the input, which is passed down to the EmployeeList component.
-- Now the the keypoint here is: I've used UseEffect to insure it will runs after the initial render, fetching the employee data && state will re-render data that has been fetched.
+- Now the the keypoint here is: I've used UseEffect to insure it will runs after the initial render, fetching the employee data && state update the employee state which triggers a re-render data that has been fetched.
 
 ## Learn More
 
