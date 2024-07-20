@@ -1,38 +1,79 @@
+/* To Ensure the HTML and body elements fill the viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch; 
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center; /* Center text within the header */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container {
+  display: flex;
+  justify-content: center; /* Center input field horizontally */
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
 }
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; 
+  max-width: 100%; 
+  box-sizing: border-box; 
+}
+
+.table-container {
+  display: flex;
+  width: 100%; 
+  max-width: 100%; 
+  box-sizing: border-box; 
+  justify-content: center; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; 
+  margin-top: 40px;
+  max-width: 100%; 
+  box-sizing: border-box; 
+
+}
+
+/* Table header and cell styling */
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+p {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+

@@ -39,6 +39,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+### `Approach`
+- The App component fetches employee data and manage the state for the employee list and filtered employee list.
+- The SearchBar component handles the search input and triggers the search functionality.
+- The EmployeeList component displays the list of employees in a table format.
+- The search functionality filters employees based on the input, which is passed down to the EmployeeList component.
+- Now the the keypoint here is: I've used UseEffect to insure it will runs after the initial render, fetching the employee data && state will re-render data that has been fetched.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
